@@ -52,8 +52,29 @@ Ova aplikacija je web prodavnica fitnes opreme, izrađena korišćenjem **MERN s
 ---
 
 ## 📁 Instalacija i pokretanje
-
+- Napraviti .env fajl sa sledecim sadrzajem:
+---------
+MONGO_URL=mongodb+srv://vladimirelek0:<db_password>@cluster0.01m8b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+MONGO_PASSWORD=vladimir123
+PORT=4001
+NODE_ENV="development"
+MAILTRAP_EMAIL_HOST=sandbox.smtp.mailtrap.io
+MAILTRAP_EMAIL_PORT=587
+MAILTRAP_EMAIL_USERNAME=c719d99c1c2e12
+MAILTRAP_EMAIL_PASSWORD=4228a2a0999421
+TOKEN_SECRET=secret
+GMAIL_EMAIL=vladimirelek0@gmail.com
+GMAIL_PASSWORD=jhmh zyvb qkut duty
+----------
 - I na frontend i na backend folderu izvrsiti npm i komandu
 - Unutar backend foldera pokrecemo sa npm start
 - Unutar frontend foldera sa npm run dev
+Korisnici aplikacije
+Admin:
+vladimir@gmail.com
+12345
+User:
+tihomir@gmail.com
+12345
+
 
