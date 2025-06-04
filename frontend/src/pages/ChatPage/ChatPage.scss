@@ -1,0 +1,110 @@
+$primary-red: #e10600;
+$dark-bg: #000; // totalno crna pozadina
+$dark-gray: #1e1e1e;
+$text-light: #f5f5f5;
+$button-hover: #b70000;
+
+body {
+  background-color: #000;
+}
+
+.users-list-container {
+  max-width: 420px;
+  margin: 40px auto;
+  background-color: $dark-bg;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(225, 6, 0, 0.5);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: $text-light;
+}
+
+.users-list-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $primary-red;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 6px rgba(225, 6, 0, 0.8);
+}
+
+.users-list-empty {
+  font-style: italic;
+  text-align: center;
+  color: lighten($dark-bg, 50%);
+  margin-top: 20px;
+}
+
+.users-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.users-list__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $dark-gray;
+  padding: 14px 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 6px rgba(225, 6, 0, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    background-color: lighten($dark-gray, 5%);
+    box-shadow: 0 0 15px $primary-red;
+  }
+}
+
+.users-list__username {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.users-list__button {
+  background-color: transparent;
+  border: none;
+  max-width: fit-content;
+  color: $primary-red;
+  font-size: 1.6rem; // manja ikonica
+  cursor: pointer;
+  border-radius: 6px;
+  transition: color 0.25s ease, transform 0.15s ease;
+  margin-bottom: 1.3rem;
+
+  &:hover {
+    color: $button-hover;
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .users-list-container {
+    margin: 1rem;
+  }
+
+  .users-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Chat Room Integration
+.users-list-container {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 4rem);
+
+  .chat-room-active & {
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+  }
+}

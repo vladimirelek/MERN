@@ -1,0 +1,45 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111;
+}
+
+.register-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(230, 57, 70, 0.3);
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 360px;
+  color: #fff;
+  font-family: "Arial Black", sans-serif;
+}
+
+.register-label {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #e63946;
+}
+
+.input-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.register-input {
+  width: 100%;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #fff;
+}

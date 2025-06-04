@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title Nova poruka sa kontakt forme
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f7f7f7;
+      }
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      h1 {
+        color: #333;
+      }
+      p {
+        font-size: 16px;
+        color: #555;
+      }
+      .footer {
+        margin-top: 20px;
+        font-size: 12px;
+        color: #999;
+      }
+  body
+    .container
+      h1 📩 Nova poruka sa kontakt forme
+      p
+        | <strong>Korisnik:</strong> #{username}
+      p
+        | <strong>Email:</strong> #{username}
+      p
+        | <strong>Poruka:</strong>
+      p #{message}
+
+      .footer
+        p Ova poruka je automatski generisana sa kontakt forme.

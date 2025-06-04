@@ -1,0 +1,41 @@
+/* Reset osnovnih stilova */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Uklanjanje podrazumevanih stilova liste */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Resetovanje linkova */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Resetovanje tipografije */
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+/* Uklanjanje podrazumevanih stilova za dugmad i inpute */
+button,
+input,
+textarea {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Resetovanje tabela */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
