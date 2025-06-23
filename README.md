@@ -64,6 +64,7 @@ MAILTRAP_EMAIL_USERNAME=c719d99c1c2e12
 MAILTRAP_EMAIL_PASSWORD=4228a2a0999421
 TOKEN_SECRET=secret
 GMAIL_EMAIL=vladimirelek0@gmail.com
+//key za slanje mejlova
 GMAIL_PASSWORD=jhmh zyvb qkut duty
 ----------
 - I na frontend i na backend folderu izvrsiti npm i komandu
